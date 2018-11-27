@@ -96,6 +96,7 @@
 				F6F72A7D21AD4E350087DE07 /* Sources */,
 				F6F72A7E21AD4E350087DE07 /* Frameworks */,
 				F6F72A7F21AD4E350087DE07 /* Resources */,
+				F6F72AA021AD56EB0087DE07 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -171,6 +172,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo \"Syncing code from $UNITY_IOS_EXPORT_PATH...\"\nrsync -rc --exclude-from=$PRODUCT_NAME/Unity/rsync_exclude --delete $UNITY_IOS_EXPORT_PATH/Classes/ $PRODUCT_NAME/Unity/Classes/\nrsync -rc --exclude-from=$PRODUCT_NAME/Unity/rsync_exclude --delete $UNITY_IOS_EXPORT_PATH/Libraries/ $PRODUCT_NAME/Unity/Libraries/\n";
+		};
+		F6F72AA021AD56EB0087DE07 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Syncing data from $UNITY_IOS_EXPORT_PATH...\"\nrm -rf \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Data\"\ncp -Rf \"$UNITY_IOS_EXPORT_PATH/Data\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Data\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
