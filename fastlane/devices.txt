@@ -1,4 +1,5 @@
 Device ID	Device Name
+664debe248fe62faf0d84c5898be612cbab6593b	Martina_6s
 a509b2093fcb5efd4b2db85799dd1b17e2239206	MarkoKuljanski
 474bd2443fc0a88ae5615939d782fe8b10c56f3b	Mia_Test_iPhone_6
 970948a3866f8600bbf680e5ecb4e9cbea8a8404	Marta
