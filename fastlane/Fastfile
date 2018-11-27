@@ -1,0 +1,40 @@
+fastlane_version "2.53.1"
+
+default_platform :ios
+
+platform :ios do
+    before_all do
+    end
+
+    lane :production do
+        increment_build_number
+
+        match(type: "appstore", app_identifier: "com.rep.UnityTest")
+        gym(scheme: "UnityTest")
+
+        pilot
+    end
+
+    lane :test do
+        increment_build_number
+
+        match(type: "adhoc", app_identifier: "com.rep.UnityTest")
+        gym(scheme: "UnityTest", configuration: "Debug")
+
+        crashlytics(
+            api_token: "002d1e80e7bf3a300de583f69a92347342fc38a9",
+            build_secret: "e3df1c13235f9dab0dc7accc866329608184f2134ce261febd9bf33b9940b592",
+            groups: "SmartLumies"
+        )
+    end
+
+  lane :devices do
+    register_devices(devices_file: "./fastlane/devices.txt")
+
+    match(type: "appstore", app_identifier: "com.rep.UnityTest", force_for_new_devices: true)
+    match(type: "adhoc", app_identifier: "com.rep.UnityTest", force_for_new_devices: true)
+    match(type: "development", app_identifier: "com.rep.UnityTest", force_for_new_devices: true)
+  end
+
+end
+
