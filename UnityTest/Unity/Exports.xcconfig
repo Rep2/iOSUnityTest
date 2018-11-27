@@ -1,2 +1,2 @@
 UNITY_RUNTIME_VERSION = 2018.2.17f1;
-UNITY_IOS_EXPORT_PATH = "/Users/⁨ivanrep/⁨Projects/⁨Unity/⁨RocketFishBuild⁩";
+UNITY_IOS_EXPORT_PATH = UnityTest/RocketFishBuild;
