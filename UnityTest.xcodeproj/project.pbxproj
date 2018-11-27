@@ -15,6 +15,7 @@
 		F6F72A9C21AD54130087DE07 /* UnityUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6F72A9721AD54130087DE07 /* UnityUtils.mm */; };
 		F6F72A9D21AD54130087DE07 /* rsync_exclude in Resources */ = {isa = PBXBuildFile; fileRef = F6F72A9821AD54130087DE07 /* rsync_exclude */; };
 		F6F72A9E21AD54130087DE07 /* Unity.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6F72A9A21AD54130087DE07 /* Unity.xcconfig */; };
+		F6F72AA221AD590E0087DE07 /* Exports.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6F72AA121AD590E0087DE07 /* Exports.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F6F72A9921AD54130087DE07 /* UnityUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityUtils.h; sourceTree = "<group>"; };
 		F6F72A9A21AD54130087DE07 /* Unity.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Unity.xcconfig; sourceTree = "<group>"; };
 		F6F72A9B21AD54130087DE07 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F6F72AA121AD590E0087DE07 /* Exports.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Exports.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				F6F72A9821AD54130087DE07 /* rsync_exclude */,
 				F6F72A9921AD54130087DE07 /* UnityUtils.h */,
 				F6F72A9A21AD54130087DE07 /* Unity.xcconfig */,
+				F6F72AA121AD590E0087DE07 /* Exports.xcconfig */,
 				F6F72A9B21AD54130087DE07 /* Bridging-Header.h */,
 			);
 			path = Unity;
@@ -149,6 +152,7 @@
 				F6F72A8F21AD4E370087DE07 /* LaunchScreen.storyboard in Resources */,
 				F6F72A9D21AD54130087DE07 /* rsync_exclude in Resources */,
 				F6F72A8C21AD4E370087DE07 /* Assets.xcassets in Resources */,
+				F6F72AA221AD590E0087DE07 /* Exports.xcconfig in Resources */,
 				F6F72A8A21AD4E350087DE07 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
