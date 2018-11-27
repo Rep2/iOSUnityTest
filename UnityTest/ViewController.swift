@@ -19,7 +19,7 @@ class ViewController: UIViewController {
             NotificationCenter.default.addObserver(self, selector: #selector(handleUnityToggleRotation(_:)), name: NSNotification.Name("UnityToggleRotation"), object: nil)
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: showUnitySubView)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: showUnitySubView)
     }
 
     @objc func handleUnityReady() {
