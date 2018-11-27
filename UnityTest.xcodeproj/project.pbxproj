@@ -92,6 +92,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6F72A9321AD4E370087DE07 /* Build configuration list for PBXNativeTarget "UnityTest" */;
 			buildPhases = (
+				F6F72A9F21AD56A30087DE07 /* ShellScript */,
 				F6F72A7D21AD4E350087DE07 /* Sources */,
 				F6F72A7E21AD4E350087DE07 /* Frameworks */,
 				F6F72A7F21AD4E350087DE07 /* Resources */,
@@ -153,6 +154,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F6F72A9F21AD56A30087DE07 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Syncing code from $UNITY_IOS_EXPORT_PATH...\"\nrsync -rc --exclude-from=$PRODUCT_NAME/Unity/rsync_exclude --delete $UNITY_IOS_EXPORT_PATH/Classes/ $PRODUCT_NAME/Unity/Classes/\nrsync -rc --exclude-from=$PRODUCT_NAME/Unity/rsync_exclude --delete $UNITY_IOS_EXPORT_PATH/Libraries/ $PRODUCT_NAME/Unity/Libraries/\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6F72A7D21AD4E350087DE07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,6 +209,7 @@
 /* Begin XCBuildConfiguration section */
 		F6F72A9121AD4E370087DE07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F72A9A21AD54130087DE07 /* Unity.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -249,6 +271,7 @@
 		};
 		F6F72A9221AD4E370087DE07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F72A9A21AD54130087DE07 /* Unity.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
