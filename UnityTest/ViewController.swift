@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
             appDelegate.startUnity()
 
