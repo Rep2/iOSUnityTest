@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69BB94A3CE36ED84347A68D4 /* Pods_UnityTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE09CB9389CD63DCD79DE4E /* Pods_UnityTest.framework */; };
+		6781C31FC611FAEE4B7D6AB4 /* Pods_UnityTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB906FC256433004AEF3B227 /* Pods_UnityTest.framework */; };
 		F6100DCE21BC22D400CC3194 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100DCD21BC22D400CC3194 /* FirstScreen.swift */; };
-		F65B2CED21BC27480073F468 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65B2CEC21BC27480073F468 /* SnapKit.framework */; };
+		F6DD2A9121BC28370091B8D1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DD2A9021BC28370091B8D1 /* SnapKit.framework */; };
 		F6F72A8521AD4E350087DE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F72A8421AD4E350087DE07 /* AppDelegate.swift */; };
 		F6F72A8721AD4E350087DE07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F72A8621AD4E350087DE07 /* ViewController.swift */; };
 		F6F72A8C21AD4E370087DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F72A8B21AD4E370087DE07 /* Assets.xcassets */; };
@@ -148,11 +148,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3CE09CB9389CD63DCD79DE4E /* Pods_UnityTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnityTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECDBB8D01F017ADC7E55416 /* Pods-UnityTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnityTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnityTest/Pods-UnityTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CB906FC256433004AEF3B227 /* Pods_UnityTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnityTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9DD3CB402E84E39BE72EF7C /* Pods-UnityTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnityTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnityTest/Pods-UnityTest.release.xcconfig"; sourceTree = "<group>"; };
 		F6100DCD21BC22D400CC3194 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
-		F65B2CEC21BC27480073F468 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		F6DD2A9021BC28370091B8D1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		F6F72A8121AD4E350087DE07 /* UnityTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F72A8421AD4E350087DE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F72A8621AD4E350087DE07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -783,10 +783,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F65B2CED21BC27480073F468 /* SnapKit.framework in Frameworks */,
 				F6F72DD321AD5E500087DE07 /* libiPhone-lib.a in Frameworks */,
+				F6DD2A9121BC28370091B8D1 /* SnapKit.framework in Frameworks */,
 				F6F72DD421AD5E500087DE07 /* libil2cpp.a in Frameworks */,
-				69BB94A3CE36ED84347A68D4 /* Pods_UnityTest.framework in Frameworks */,
+				6781C31FC611FAEE4B7D6AB4 /* Pods_UnityTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,8 +796,8 @@
 		273BFCA7B475D82CB9430BDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F65B2CEC21BC27480073F468 /* SnapKit.framework */,
-				3CE09CB9389CD63DCD79DE4E /* Pods_UnityTest.framework */,
+				F6DD2A9021BC28370091B8D1 /* SnapKit.framework */,
+				CB906FC256433004AEF3B227 /* Pods_UnityTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2143,10 +2143,10 @@
 				F6F72DDA21AD63A30087DE07 /* ShellScript */,
 				F6F72A7D21AD4E350087DE07 /* Sources */,
 				F6F72A7E21AD4E350087DE07 /* Frameworks */,
-				F6100DCF21BC236D00CC3194 /* Carthage */,
 				F6F72A7F21AD4E350087DE07 /* Resources */,
 				F6F72AA021AD56EB0087DE07 /* ShellScript */,
 				F6EBFC9521AD6A6A0073BF8F /* Crashlytics */,
+				F6DD2A9221BC28970091B8D1 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -2231,13 +2231,12 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6100DCF21BC236D00CC3194 /* Carthage */ = {
+		F6DD2A9221BC28970091B8D1 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
@@ -2249,7 +2248,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		F6EBFC9521AD6A6A0073BF8F /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;

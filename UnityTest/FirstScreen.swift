@@ -17,11 +17,23 @@ class FirstScreen: UIViewController {
 
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
 
+        button.setTitle("Play", for: .normal)
+
         return button
+    }()
+
+    lazy var unityView: UIView = {
+        let view = UnityGetGLView()!
+
+        view.alpha = 0
+
+        return view
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        (UIApplication.shared.delegate as? AppDelegate)?.startUnity()
 
         view.backgroundColor = .white
 
@@ -32,20 +44,26 @@ class FirstScreen: UIViewController {
             make.centerY.equalToSuperview()
             make.height.equalTo(60)
         }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.view.addSubview(self.unityView)
+
+            self.unityView.snp.makeConstraints { make in
+                make.edges.equalToSuperview()
+            }
+        }
     }
 
     @objc
     func didTapButton() {
-        UIView.transition(
-            with: self.view,
-            duration: 0.5,
-            options: .transitionCrossDissolve,
-            animations: {
-                self.present(ViewController(nibName: nil, bundle: nil), animated: true, completion: nil)
-        },
-            completion: { _ in
-                UIView.setAnimationsEnabled(true)
+        dark.snp.updateConstraints { make in
+            make.centerY.equalToSuperview().offset(view.bounds.height)
         }
-        )
+
+        UIView.animate(withDuration: 2) {
+            self.unityView.alpha = 1
+
+            self.view.layoutIfNeeded()
+        }
     }
 }
