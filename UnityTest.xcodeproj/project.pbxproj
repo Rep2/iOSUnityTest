@@ -3,16 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		69BB94A3CE36ED84347A68D4 /* Pods_UnityTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE09CB9389CD63DCD79DE4E /* Pods_UnityTest.framework */; };
 		F6100DCE21BC22D400CC3194 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100DCD21BC22D400CC3194 /* FirstScreen.swift */; };
-		F6100DD121BC239B00CC3194 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6100DD021BC239B00CC3194 /* SnapKit.framework */; };
+		F65B2CED21BC27480073F468 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65B2CEC21BC27480073F468 /* SnapKit.framework */; };
 		F6F72A8521AD4E350087DE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F72A8421AD4E350087DE07 /* AppDelegate.swift */; };
 		F6F72A8721AD4E350087DE07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F72A8621AD4E350087DE07 /* ViewController.swift */; };
-		F6F72A8A21AD4E350087DE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F72A8821AD4E350087DE07 /* Main.storyboard */; };
 		F6F72A8C21AD4E370087DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F72A8B21AD4E370087DE07 /* Assets.xcassets */; };
 		F6F72A8F21AD4E370087DE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F72A8D21AD4E370087DE07 /* LaunchScreen.storyboard */; };
 		F6F72A9C21AD54130087DE07 /* UnityUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6F72A9721AD54130087DE07 /* UnityUtils.mm */; };
@@ -153,11 +152,10 @@
 		8ECDBB8D01F017ADC7E55416 /* Pods-UnityTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnityTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnityTest/Pods-UnityTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E9DD3CB402E84E39BE72EF7C /* Pods-UnityTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnityTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnityTest/Pods-UnityTest.release.xcconfig"; sourceTree = "<group>"; };
 		F6100DCD21BC22D400CC3194 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
-		F6100DD021BC239B00CC3194 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		F65B2CEC21BC27480073F468 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		F6F72A8121AD4E350087DE07 /* UnityTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F72A8421AD4E350087DE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F72A8621AD4E350087DE07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F6F72A8921AD4E350087DE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6F72A8B21AD4E370087DE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6F72A8E21AD4E370087DE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6F72A9021AD4E370087DE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -785,9 +783,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65B2CED21BC27480073F468 /* SnapKit.framework in Frameworks */,
 				F6F72DD321AD5E500087DE07 /* libiPhone-lib.a in Frameworks */,
 				F6F72DD421AD5E500087DE07 /* libil2cpp.a in Frameworks */,
-				F6100DD121BC239B00CC3194 /* SnapKit.framework in Frameworks */,
 				69BB94A3CE36ED84347A68D4 /* Pods_UnityTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,7 +796,7 @@
 		273BFCA7B475D82CB9430BDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6100DD021BC239B00CC3194 /* SnapKit.framework */,
+				F65B2CEC21BC27480073F468 /* SnapKit.framework */,
 				3CE09CB9389CD63DCD79DE4E /* Pods_UnityTest.framework */,
 			);
 			name = Frameworks;
@@ -837,7 +835,6 @@
 				F6F72A9621AD54130087DE07 /* Unity */,
 				F6F72A8421AD4E350087DE07 /* AppDelegate.swift */,
 				F6F72A8621AD4E350087DE07 /* ViewController.swift */,
-				F6F72A8821AD4E350087DE07 /* Main.storyboard */,
 				F6F72A8B21AD4E370087DE07 /* Assets.xcassets */,
 				F6F72A8D21AD4E370087DE07 /* LaunchScreen.storyboard */,
 				F6F72A9021AD4E370087DE07 /* Info.plist */,
@@ -2146,10 +2143,10 @@
 				F6F72DDA21AD63A30087DE07 /* ShellScript */,
 				F6F72A7D21AD4E350087DE07 /* Sources */,
 				F6F72A7E21AD4E350087DE07 /* Frameworks */,
+				F6100DCF21BC236D00CC3194 /* Carthage */,
 				F6F72A7F21AD4E350087DE07 /* Resources */,
 				F6F72AA021AD56EB0087DE07 /* ShellScript */,
 				F6EBFC9521AD6A6A0073BF8F /* Crashlytics */,
-				F6100DCF21BC236D00CC3194 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -2205,7 +2202,6 @@
 				F6F72DD621AD5E500087DE07 /* libil2cpp.icalls in Resources */,
 				F6F72A8C21AD4E370087DE07 /* Assets.xcassets in Resources */,
 				F6F72AA221AD590E0087DE07 /* Exports.xcconfig in Resources */,
-				F6F72A8A21AD4E350087DE07 /* Main.storyboard in Resources */,
 				F6F72DDC21AD64400087DE07 /* Data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2241,6 +2237,7 @@
 			files = (
 			);
 			inputFileListPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
@@ -2445,14 +2442,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F6F72A8821AD4E350087DE07 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6F72A8921AD4E350087DE07 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F6F72A8D21AD4E370087DE07 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

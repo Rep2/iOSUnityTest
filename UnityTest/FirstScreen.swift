@@ -36,6 +36,16 @@ class FirstScreen: UIViewController {
 
     @objc
     func didTapButton() {
-
+        UIView.transition(
+            with: self.view,
+            duration: 0.5,
+            options: .transitionCrossDissolve,
+            animations: {
+                self.present(ViewController(nibName: nil, bundle: nil), animated: true, completion: nil)
+        },
+            completion: { _ in
+                UIView.setAnimationsEnabled(true)
+        }
+        )
     }
 }

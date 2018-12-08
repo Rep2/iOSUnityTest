@@ -8,8 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var rotateSwitch: UISwitch!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,7 +27,7 @@ class ViewController: UIViewController {
 
     @objc func handleUnityToggleRotation(_ n: NSNotification) {
         if let isOn = n.userInfo?["isOn"] as? NSNumber {
-            rotateSwitch.isOn = isOn.boolValue
+//            rotateSwitch.isOn = isOn.boolValue
         }
     }
 

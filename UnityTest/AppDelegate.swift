@@ -12,7 +12,7 @@ import Crashlytics
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    var window: UIWindow? = UIWindow()
 
     var application: UIApplication?
 
@@ -34,6 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // first call to startUnity will do some init stuff, so just call it here and directly stop it again
         startUnity()
         stopUnity()
+
+        window?.rootViewController = FirstScreen(nibName: nil, bundle: nil)
+        window?.makeKeyAndVisible()
 
         return true
     }
